@@ -11,28 +11,28 @@ import styles from './page.module.css'
 const ingredientesActivos = [
   {
     id: 'manzanilla',
-    image: '/images/manzanilla.png',
+    image: `${bp}/images/manzanilla.png`,
     name: 'Manzanilla',
     benefit: 'Calmante & Antiinflamatorio',
     description: 'Suaviza la piel irritada y reduce el enrojecimiento con su acción antiinflamatoria natural.',
   },
   {
     id: 'hamamelis',
-    image: '/images/hamamelis.png',
+    image: `${bp}/images/hamamelis.png`,
     name: 'Hamamelis',
     benefit: 'Astringente & Purificante',
     description: 'Afina los poros, controla el exceso de sebo y equilibra la piel mixta con suavidad.',
   },
   {
     id: 'carbonactivado',
-    image: '/images/carbonactivado.png',
+    image: `${bp}/images/carbonactivado.png`,
     name: 'Carbón Activado',
     benefit: 'Desintoxicante & Purificante',
     description: 'Absorbe impurezas y toxinas desde el interior del poro, dejando la piel limpia y renovada.',
   },
   {
     id: 'arroz',
-    image: '/images/arroz.png',
+    image: `${bp}/images/arroz.png`,
     name: 'Arroz',
     benefit: 'Iluminador & Nutritivo',
     description: 'Unifica el tono, aporta luminosidad y nutre la piel con aminoácidos y vitaminas del complejo B.',
