@@ -148,8 +148,16 @@ descripción corta, activos destacados, beneficios, tipo de piel y modo de uso.
 En el catálogo (/productos) muestra solo: nombre, activos destacados, descripción
 corta y botón de compra.
 
-El precio de cada producto debe quedar como placeholder `$[PRECIO]` hasta que
-la marca lo confirme.
+Precios confirmados por la marca:
+
+| Producto | Precio |
+|---|---|
+| Jabón Facial | $47.000 |
+| Crema Hidratante | $52.000 |
+| Tónico de Manzanilla | $47.000 |
+| Tónico de Hamamelis | $47.000 |
+| Sérum de Vitamina C | $51.000 |
+| Sérum de Colágeno | $43.000 |
 
 Botón de compra — patrón de URL para todos los productos:
 ```

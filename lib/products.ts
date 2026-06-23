@@ -22,7 +22,7 @@ export const products: Product[] = [
     name: 'Jabón Facial de Carbón Activado, Aloe Vera y Ácido Salicílico',
     type: 'Limpiador facial de limpieza profunda',
     tagline: 'Pureza profunda',
-    price: '$[PRECIO]',
+    price: '$47.000',
     activeIngredients: ['Carbón Activado', 'Aloe Vera', 'Ácido Salicílico', 'Vitamina E'],
     shortDescription: 'Sistema limpiador purificante diseñado para piel grasa y con tendencia acneica.',
     benefits: [
@@ -42,7 +42,7 @@ export const products: Product[] = [
     name: 'Crema Hidratante de Colágeno, Elastina, Vitamina E y Niacinamida',
     type: 'Crema facial hidratante y revitalizante',
     tagline: 'Nutrición profunda 24h',
-    price: '$[PRECIO]',
+    price: '$52.000',
     activeIngredients: ['Colágeno Hidrolizado', 'Elastina Hidrolizada', 'Vitamina E', 'Niacinamida', 'Glicerina'],
     shortDescription: 'Emulsión hidratante facial desarrollada para mejorar hidratación, elasticidad y apariencia de la piel.',
     benefits: [
@@ -62,7 +62,7 @@ export const products: Product[] = [
     name: 'Tónico de Manzanilla y Ácido Hialurónico',
     type: 'Tónico facial calmante e hidratante',
     tagline: 'Calma e hidratación',
-    price: '$[PRECIO]',
+    price: '$47.000',
     activeIngredients: ['Extracto de Manzanilla', 'Ácido Hialurónico', 'Glicerina', 'Extractos Botánicos'],
     shortDescription: 'Tónico calmante e hidratante para piel sensible o irritada.',
     benefits: [
@@ -81,7 +81,7 @@ export const products: Product[] = [
     name: 'Tónico de Hamamelis y Ácido Salicílico',
     type: 'Tónico facial purificante',
     tagline: 'Control y equilibrio',
-    price: '$[PRECIO]',
+    price: '$47.000',
     activeIngredients: ['Hamamelis', 'Ácido Salicílico', 'Aloe Vera', 'Extracto de Sauce'],
     shortDescription: 'Tónico facial purificante e hidratante enfocado en balancear piel grasa.',
     benefits: [
@@ -100,7 +100,7 @@ export const products: Product[] = [
     name: 'Sérum de Vitamina C, Extracto de Arroz, Elastina y Colágeno',
     type: 'Sérum facial iluminador y rejuvenecedor',
     tagline: 'Luminosidad e iluminación',
-    price: '$[PRECIO]',
+    price: '$51.000',
     activeIngredients: ['Vitamina C', 'Extracto de Arroz', 'Elastina', 'Colágeno'],
     shortDescription: 'Sérum antioxidante e iluminador enfocado en rejuvenecimiento facial.',
     benefits: [
@@ -119,7 +119,7 @@ export const products: Product[] = [
     name: 'Sérum de Colágeno y Ácido Hialurónico',
     type: 'Sérum facial hidratante y reafirmante',
     tagline: 'Firmeza y relleno celular',
-    price: '$[PRECIO]',
+    price: '$43.000',
     activeIngredients: ['Colágeno', 'Ácido Hialurónico', 'Glicerina', 'Activos Humectantes'],
     shortDescription: 'Sérum hidratante y reafirmante de rápida absorción.',
     benefits: [
