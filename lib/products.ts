@@ -14,6 +14,8 @@ export interface Product {
   featured: boolean
 }
 
+const bp = process.env.NEXT_PUBLIC_BASE_PATH ?? ''
+
 export const products: Product[] = [
   {
     id: 'jabon-facial',
@@ -31,8 +33,8 @@ export const products: Product[] = [
     ],
     skinType: 'Mixta, grasa y con tendencia acneica',
     usageMode: 'Aplicar sobre el rostro húmedo con masajes circulares y retirar con abundante agua. Usar día y noche.',
-    image: '/images/jabon_facial.png',
-    images: ['/images/jabon_facial.png'],
+    image: `${bp}/images/jabon_facial.png`,
+    images: [`${bp}/images/jabon_facial.png`],
     featured: false,
   },
   {
@@ -51,8 +53,8 @@ export const products: Product[] = [
     ],
     skinType: 'Todo tipo de piel, especialmente piel seca o con signos de envejecimiento',
     usageMode: 'Aplicar sobre el rostro limpio con suaves movimientos ascendentes hasta su absorción.',
-    image: '/images/hidratante.png',
-    images: ['/images/hidratante.png', '/images/crema_hidratante.png'],
+    image: `${bp}/images/hidratante.png`,
+    images: [`${bp}/images/hidratante.png`, `${bp}/images/crema_hidratante.png`],
     featured: true,
   },
   {
@@ -70,8 +72,8 @@ export const products: Product[] = [
     ],
     skinType: 'Sensible, seca o irritada',
     usageMode: 'Aplicar después de la limpieza facial con algodón o directamente sobre el rostro.',
-    image: '/images/tonico_manzanilla.png',
-    images: ['/images/tonico_manzanilla.png'],
+    image: `${bp}/images/tonico_manzanilla.png`,
+    images: [`${bp}/images/tonico_manzanilla.png`],
     featured: false,
   },
   {
@@ -89,8 +91,8 @@ export const products: Product[] = [
     ],
     skinType: 'Grasa y con tendencia acneica',
     usageMode: 'Aplicar sobre la piel limpia evitando el contorno de ojos.',
-    image: '/images/tonico_hamamelis.png',
-    images: ['/images/tonico_hamamelis.png'],
+    image: `${bp}/images/tonico_hamamelis.png`,
+    images: [`${bp}/images/tonico_hamamelis.png`],
     featured: false,
   },
   {
@@ -108,8 +110,8 @@ export const products: Product[] = [
     ],
     skinType: 'Todo tipo de piel',
     usageMode: 'Aplicar de 3 a 5 gotas sobre el rostro limpio antes de la crema hidratante.',
-    image: '/images/serum_vitaminac.png',
-    images: ['/images/serum_vitaminac.png'],
+    image: `${bp}/images/serum_vitaminac.png`,
+    images: [`${bp}/images/serum_vitaminac.png`],
     featured: true,
   },
   {
@@ -127,8 +129,8 @@ export const products: Product[] = [
     ],
     skinType: 'Piel seca, madura o deshidratada',
     usageMode: 'Aplicar mañana y noche sobre el rostro limpio.',
-    image: '/images/serum_colageno.png',
-    images: ['/images/serum_colageno.png'],
+    image: `${bp}/images/serum_colageno.png`,
+    images: [`${bp}/images/serum_colageno.png`],
     featured: true,
   },
 ]

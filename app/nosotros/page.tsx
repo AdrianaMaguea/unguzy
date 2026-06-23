@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import SectionReveal from '@/components/SectionReveal/SectionReveal'
+import { bp } from '@/lib/basePath'
 import styles from './page.module.css'
 import type { Metadata } from 'next'
 
@@ -118,7 +119,7 @@ export default function NosotrosPage() {
       <section className={styles.hero}>
         <div className={styles.heroImage}>
           <Image
-            src="/images/macro.png"
+            src={`${bp}/images/macro.png`}
             alt="Ingrediente natural UNGUZY"
             fill
             priority
@@ -180,7 +181,7 @@ export default function NosotrosPage() {
           <SectionReveal className={styles.historiaImagen} fade delay={200}>
             <div className={styles.imagenFrame}>
               <Image
-                src="/images/modelo1.png"
+                src={`${bp}/images/modelo1.png`}
                 alt="Ingredientes naturales UNGUZY"
                 fill
                 sizes="(max-width: 768px) 100vw, 45vw"

@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
+import { bp } from '@/lib/basePath'
 import styles from './Navbar.module.css'
 
 const links = [
@@ -38,7 +39,7 @@ export default function Navbar() {
       <nav className={styles.nav}>
         <Link href="/" className={styles.logo}>
           <Image
-            src="/images/logo.png"
+            src={`${bp}/images/logo.png`}
             alt="UNGUZY"
             width={120}
             height={64}

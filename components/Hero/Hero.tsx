@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { bp } from '@/lib/basePath'
 import styles from './Hero.module.css'
 
 export default function Hero() {
@@ -7,7 +8,7 @@ export default function Hero() {
     <section className={styles.hero}>
       <div className={styles.imageContainer}>
         <Image
-          src="/images/hero_image.png"
+          src={`${bp}/images/hero_image.png`}
           alt="UNGUZY — Balance Natural Para Tu Piel"
           fill
           priority

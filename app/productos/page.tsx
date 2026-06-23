@@ -2,6 +2,7 @@ import Image from 'next/image'
 import ProductCard from '@/components/ProductCard/ProductCard'
 import SectionReveal from '@/components/SectionReveal/SectionReveal'
 import { products } from '@/lib/products'
+import { bp } from '@/lib/basePath'
 import styles from './page.module.css'
 import type { Metadata } from 'next'
 
@@ -16,7 +17,7 @@ export default function ProductosPage() {
       <section className={styles.hero}>
         <div className={styles.heroBg}>
           <Image
-            src="/images/lifestyle.png"
+            src={`${bp}/images/lifestyle.png`}
             alt="UNGUZY lifestyle"
             fill
             sizes="100vw"

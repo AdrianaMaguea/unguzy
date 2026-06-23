@@ -10,9 +10,11 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? ''
   return (
     <html lang="es">
       <head>
+        <style dangerouslySetInnerHTML={{ __html: `@font-face{font-family:'UnguzyFont';src:url('${basePath}/fonts/against regular.otf') format('opentype');font-weight:normal;font-style:normal;font-display:swap;}` }} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>

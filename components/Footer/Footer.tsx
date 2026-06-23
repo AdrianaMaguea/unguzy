@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { bp } from '@/lib/basePath'
 import styles from './Footer.module.css'
 
 const navLinks = [
@@ -15,7 +16,7 @@ export default function Footer() {
       <div className={styles.inner}>
         <div className={styles.brand}>
           <Image
-            src="/images/logo.png"
+            src={`${bp}/images/logo.png`}
             alt="UNGUZY"
             width={100}
             height={56}

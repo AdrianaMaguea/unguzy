@@ -5,6 +5,7 @@ import ProductCard from '@/components/ProductCard/ProductCard'
 import SectionReveal from '@/components/SectionReveal/SectionReveal'
 import { featuredProducts } from '@/lib/products'
 import { WHATSAPP_NUMBER } from '@/lib/config'
+import { bp } from '@/lib/basePath'
 import styles from './page.module.css'
 
 const ingredientesActivos = [
@@ -129,7 +130,7 @@ export default function Home() {
           <SectionReveal className={styles.nosotrosImage} fade>
             <div className={styles.imageFrame}>
               <Image
-                src="/images/modelo2.png"
+                src={`${bp}/images/modelo2.png`}
                 alt="Mujer usando productos UNGUZY"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
