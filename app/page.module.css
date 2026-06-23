@@ -1,0 +1,281 @@
+.featured {
+  padding: var(--spacing-lg) 0 var(--spacing-sm);
+  background-color: var(--color-blanco);
+}
+
+.featured h2 {
+  margin-bottom: var(--spacing-lg);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: var(--spacing-md);
+  align-items: stretch;
+}
+
+.grid > * {
+  height: 100%;
+}
+
+.viewAll {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--spacing-md);
+}
+
+/* ─── Divider floral ─────────────────────────────────────────────── */
+
+.florDivider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-sm) 0;
+}
+
+/* ─── Ingredientes activos ───────────────────────────────────────── */
+
+.activos {
+  padding: var(--spacing-lg) 0;
+  background-color: var(--color-blanco);
+}
+
+.activosGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: var(--spacing-md);
+}
+
+.activoCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.activoImageWrap {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  background-color: var(--color-papel);
+}
+
+.activoImage {
+  transition: transform var(--transition-slow);
+}
+
+.activoCard:hover .activoImage {
+  transform: scale(1.05);
+}
+
+.activoBenefit {
+  font-size: 0.63rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-ambar);
+  margin-top: 0.875rem;
+}
+
+.activoName {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--color-raiz);
+  line-height: 1.2;
+}
+
+.activoDesc {
+  font-size: 0.82rem;
+  line-height: 1.7;
+  color: var(--color-raiz);
+  opacity: 0.68;
+}
+
+/* ─── Nosotros teaser ────────────────────────────────────────────── */
+
+.nosotrosTeaser {
+  background-color: var(--color-papel);
+  padding: var(--spacing-lg) 0;
+}
+
+.nosotrosInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+  align-items: center;
+}
+
+.nosotrosImage {
+  height: 580px;
+  position: relative;
+}
+
+.imageFrame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.nosotrosContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: var(--spacing-md) 0;
+}
+
+.nosotrosTitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 500;
+  color: var(--color-raiz);
+  line-height: 1.15;
+}
+
+.nosotrosTitle em {
+  font-style: italic;
+  color: var(--color-terra);
+}
+
+.nosotrosText {
+  font-size: 0.92rem;
+  line-height: 1.8;
+  color: var(--color-raiz);
+  opacity: 0.75;
+}
+
+/* ─── CTA Asesoramiento ──────────────────────────────────────────── */
+
+.asesoria {
+  background-color: var(--color-raiz);
+  padding: var(--spacing-lg) 0;
+  text-align: center;
+}
+
+.asesoriaInner {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.asesoriaTitle {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 500;
+  color: var(--color-papel);
+  line-height: 1.1;
+}
+
+.asesoriaText {
+  font-size: 0.92rem;
+  line-height: 1.8;
+  color: var(--color-papel);
+  opacity: 0.65;
+  max-width: 480px;
+}
+
+.asesoriaBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+  padding: 0.9rem 2rem;
+  background-color: var(--color-terra);
+  color: var(--color-blanco);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: var(--radius-sm);
+  transition: background-color var(--transition-med), transform var(--transition-fast);
+}
+
+.asesoriaBtn:hover {
+  background-color: var(--color-ambar);
+  transform: translateY(-2px);
+}
+
+/* ─── Ingredients banner ─────────────────────────────────────────── */
+
+.ingredientsBanner {
+  background-color: var(--color-raiz);
+  padding: var(--spacing-md) 0;
+  text-align: center;
+}
+
+.ingredientsTitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--color-papel);
+  margin-bottom: var(--spacing-md);
+}
+
+.ingredientsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.ingredientChip {
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: var(--color-papel);
+  border: 1px solid rgba(231, 222, 209, 0.25);
+  padding: 0.5rem 1.25rem;
+  border-radius: 100px;
+  opacity: 0.75;
+  transition: opacity var(--transition-fast), border-color var(--transition-fast);
+}
+
+.ingredientChip:hover {
+  opacity: 1;
+  border-color: rgba(231, 222, 209, 0.6);
+}
+
+/* ─── Responsive ─────────────────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .activosGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nosotrosInner {
+    grid-template-columns: 1fr;
+  }
+
+  .nosotrosImage {
+    height: 380px;
+  }
+}
+
+@media (max-width: 600px) {
+  .activosGrid {
+    grid-template-columns: 1fr;
+  }
+}

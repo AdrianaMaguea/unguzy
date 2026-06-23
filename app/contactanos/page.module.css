@@ -1,0 +1,133 @@
+.page {
+  min-height: 100vh;
+  background-color: var(--color-blanco);
+}
+
+.hero {
+  background-color: var(--color-papel);
+  padding: var(--spacing-lg) 0 var(--spacing-xl);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-weight: 500;
+  color: var(--color-raiz);
+  line-height: 1.1;
+  margin-bottom: 1.25rem;
+}
+
+.title em {
+  font-style: italic;
+  color: var(--color-terra);
+}
+
+.subtitle {
+  max-width: 520px;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--color-raiz);
+  opacity: 0.7;
+}
+
+/* ─── CTA principal ──────────────────────────────────────────────── */
+
+.ctaSection {
+  padding: var(--spacing-xl) 0;
+}
+
+.ctaCard {
+  background-color: var(--color-raiz);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg) var(--spacing-md);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+.ctaIcon {
+  color: var(--color-ambar);
+  margin-bottom: 0.5rem;
+}
+
+.ctaTitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 500;
+  color: var(--color-papel);
+}
+
+.ctaPhone {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--color-ambar);
+  letter-spacing: 0.04em;
+}
+
+.ctaText {
+  max-width: 500px;
+  font-size: 0.9rem;
+  line-height: 1.75;
+  color: var(--color-papel);
+  opacity: 0.7;
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.75rem;
+  padding: 1rem 2.5rem;
+  background-color: var(--color-terra);
+  color: var(--color-blanco);
+  font-size: 0.88rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: var(--radius-sm);
+  transition: background-color var(--transition-med), transform var(--transition-med);
+}
+
+.ctaButton:hover {
+  background-color: #c45d35;
+  transform: translateY(-2px);
+}
+
+/* ─── Info grid ──────────────────────────────────────────────────── */
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.infoItem {
+  padding: 2rem;
+  background-color: var(--color-papel);
+  border-radius: var(--radius-md);
+}
+
+.infoTitle {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-raiz);
+  margin-bottom: 0.75rem;
+}
+
+.infoText {
+  font-size: 0.85rem;
+  line-height: 1.75;
+  color: var(--color-raiz);
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .infoGrid {
+    grid-template-columns: 1fr;
+  }
+}
