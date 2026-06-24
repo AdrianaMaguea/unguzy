@@ -176,9 +176,6 @@ export default function Home() {
       <section className={styles.ingredientsBanner}>
         <div className="container">
           <SectionReveal>
-            <p className="section-label" style={{ textAlign: 'center', color: 'var(--color-blanco)', opacity: 0.7 }}>
-              Ingredientes clave
-            </p>
             <h2 className={styles.ingredientsTitle}>
               De la naturaleza a tu rutina
             </h2>

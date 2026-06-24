@@ -107,7 +107,7 @@
   padding: 0 var(--spacing-md);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--spacing-lg);
+  gap: 2.5rem;
   align-items: center;
 }
 
@@ -152,6 +152,12 @@
 }
 
 /* ─── CTA Asesoramiento ──────────────────────────────────────────── */
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  40%       { transform: translateY(-8px); }
+  60%       { transform: translateY(-4px); }
+}
 
 .asesoria {
   background-color: var(--color-raiz);
@@ -199,12 +205,12 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   border-radius: var(--radius-sm);
-  transition: background-color var(--transition-med), transform var(--transition-fast);
+  animation: bounce 2s ease-in-out infinite;
 }
 
 .asesoriaBtn:hover {
   background-color: var(--color-ambar);
-  transform: translateY(-2px);
+  animation-play-state: paused;
 }
 
 /* ─── Ingredients banner ─────────────────────────────────────────── */

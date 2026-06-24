@@ -17,10 +17,10 @@
 }
 
 .card {
-  flex: 0 0 calc((100% - 3 * var(--gap)) / 4);
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  min-width: 0;
 }
 
 .imageWrap {
@@ -125,20 +125,10 @@
   .viewport {
     --gap: 1.5rem;
   }
-
-  .card {
-    flex: 0 0 calc((100% - var(--gap)) / 2);
-  }
 }
 
 @media (max-width: 640px) {
   .viewport {
-    --gap: 1.25rem;
-    overflow: visible;
-    overflow-x: clip;
-  }
-
-  .card {
-    flex: 0 0 calc(100% - 2.5rem);
+    --gap: 1rem;
   }
 }

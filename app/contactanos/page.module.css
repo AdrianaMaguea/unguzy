@@ -76,6 +76,12 @@
   flex-wrap: wrap;
 }
 
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  40%       { transform: translateY(-8px); }
+  60%       { transform: translateY(-4px); }
+}
+
 .ctaButton {
   display: inline-flex;
   align-items: center;
@@ -89,12 +95,12 @@
   text-transform: uppercase;
   border-radius: var(--radius-sm);
   text-decoration: none;
-  transition: background-color var(--transition-med), transform var(--transition-med);
+  animation: bounce 2s ease-in-out infinite;
 }
 
 .ctaButton:hover {
   background-color: #c45d35;
-  transform: translateY(-2px);
+  animation-play-state: paused;
 }
 
 .heroPhone {
