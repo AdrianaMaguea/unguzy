@@ -1,7 +1,7 @@
 import styles from './AnnouncementBar.module.css'
 
 const items = [
-  'Envío gratis por compra de kit',
+  'Envío gratis por compras mayores a $150.000 o compra de kits',
   'Pago seguro a contra entrega',
 ]
 

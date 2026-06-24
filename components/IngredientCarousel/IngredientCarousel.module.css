@@ -1,0 +1,144 @@
+.root {
+  margin-top: var(--spacing-md);
+}
+
+.viewport {
+  --gap: 2rem;
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+  gap: var(--gap);
+  transition: transform 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card {
+  flex: 0 0 calc((100% - 3 * var(--gap)) / 4);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.imageWrap {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  background-color: var(--color-papel);
+}
+
+.imageWrap img {
+  transition: transform 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.card:hover .imageWrap img {
+  transform: scale(1.05);
+}
+
+.benefit {
+  font-size: 0.63rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-ambar);
+  margin-top: 0.875rem;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--color-raiz);
+  line-height: 1.2;
+}
+
+.description {
+  font-size: 0.82rem;
+  line-height: 1.7;
+  color: var(--color-raiz);
+  opacity: 0.68;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid rgba(91, 42, 24, 0.2);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--color-raiz);
+  cursor: pointer;
+  transition: background-color 250ms ease, border-color 250ms ease, transform 250ms ease;
+}
+
+.arrow:hover:not(:disabled) {
+  background-color: var(--color-raiz);
+  border-color: var(--color-raiz);
+  color: var(--color-blanco);
+  transform: scale(1.05);
+}
+
+.arrow:disabled {
+  opacity: 0.25;
+  cursor: default;
+}
+
+.dots {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: rgba(91, 42, 24, 0.2);
+  border: none;
+  cursor: pointer;
+  transition: background-color 250ms ease, transform 250ms ease;
+  padding: 0;
+}
+
+.dotActive {
+  background-color: var(--color-raiz);
+  transform: scale(1.4);
+}
+
+/* ─── Responsive ─────────────────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+  .viewport {
+    --gap: 1.5rem;
+  }
+
+  .card {
+    flex: 0 0 calc((100% - var(--gap)) / 2);
+  }
+}
+
+@media (max-width: 640px) {
+  .viewport {
+    --gap: 1.25rem;
+    overflow: visible;
+    overflow-x: clip;
+  }
+
+  .card {
+    flex: 0 0 calc(100% - 2.5rem);
+  }
+}

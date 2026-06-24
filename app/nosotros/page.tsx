@@ -217,7 +217,7 @@ export default function NosotrosPage() {
       <section className={styles.ingredientes}>
         <div className="container">
           <SectionReveal>
-            <p className="section-label" style={{ color: 'var(--color-papel)', opacity: 0.6 }}>
+            <p className="section-label" style={{ color: 'var(--color-blanco)', opacity: 0.7 }}>
               Materia prima
             </p>
             <h2 className={styles.ingredientesTitulo}>Ingredientes Clave</h2>

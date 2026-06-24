@@ -3,12 +3,41 @@ import Link from 'next/link'
 import Hero from '@/components/Hero/Hero'
 import ProductCard from '@/components/ProductCard/ProductCard'
 import SectionReveal from '@/components/SectionReveal/SectionReveal'
+import IngredientCarousel from '@/components/IngredientCarousel/IngredientCarousel'
 import { featuredProducts } from '@/lib/products'
 import { WHATSAPP_NUMBER } from '@/lib/config'
 import { bp } from '@/lib/basePath'
 import styles from './page.module.css'
 
 const ingredientesActivos = [
+  {
+    id: 'vitac',
+    image: `${bp}/images/vitac.png`,
+    name: 'Vitamina C',
+    benefit: 'Iluminador & Antioxidante',
+    description: 'Unifica el tono, combate los radicales libres y aporta luminosidad visible desde los primeros usos.',
+  },
+  {
+    id: 'colageno',
+    image: `${bp}/images/colageno.png`,
+    name: 'Colágeno',
+    benefit: 'Reafirmante & Anti-aging',
+    description: 'Refuerza la estructura de la piel, mejora su elasticidad y reduce visiblemente los signos del tiempo.',
+  },
+  {
+    id: 'aloe',
+    image: `${bp}/images/aloe.png`,
+    name: 'Aloe Vera',
+    benefit: 'Calmante & Regenerador',
+    description: 'Hidrata en profundidad, calma la piel irritada y acelera la regeneración celular de forma natural.',
+  },
+  {
+    id: 'acido',
+    image: `${bp}/images/acido.png`,
+    name: 'Ácido Hialurónico',
+    benefit: 'Hidratante & Relleno',
+    description: 'Atrae y retiene la humedad en la piel, rellenando líneas finas y aportando una textura tersa y jugosa.',
+  },
   {
     id: 'manzanilla',
     image: `${bp}/images/manzanilla.png`,
@@ -55,7 +84,7 @@ export default function Home() {
           <div className={styles.grid}>
             {featuredProducts.map((product, i) => (
               <SectionReveal key={product.id} delay={i * 120}>
-                <ProductCard product={product} hideIngredients />
+                <ProductCard product={product} />
               </SectionReveal>
             ))}
           </div>
@@ -100,27 +129,9 @@ export default function Home() {
             <p className="section-label">Ingredientes Activos</p>
             <h2 className="section-title">Lo que hace la diferencia</h2>
           </SectionReveal>
-          <div className={styles.activosGrid}>
-            {ingredientesActivos.map((ing, i) => (
-              <SectionReveal key={ing.id} delay={i * 110}>
-                <article className={styles.activoCard}>
-                  <div className={styles.activoImageWrap}>
-                    <Image
-                      src={ing.image}
-                      alt={ing.name}
-                      fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                      style={{ objectFit: 'cover' }}
-                      className={styles.activoImage}
-                    />
-                  </div>
-                  <p className={styles.activoBenefit}>{ing.benefit}</p>
-                  <h3 className={styles.activoName}>{ing.name}</h3>
-                  <p className={styles.activoDesc}>{ing.description}</p>
-                </article>
-              </SectionReveal>
-            ))}
-          </div>
+          <SectionReveal delay={120}>
+            <IngredientCarousel items={ingredientesActivos} />
+          </SectionReveal>
         </div>
       </section>
 
@@ -165,19 +176,12 @@ export default function Home() {
       <section className={styles.ingredientsBanner}>
         <div className="container">
           <SectionReveal>
-            <p className="section-label" style={{ textAlign: 'center', color: 'var(--color-papel)', opacity: 0.6 }}>
+            <p className="section-label" style={{ textAlign: 'center', color: 'var(--color-blanco)', opacity: 0.7 }}>
               Ingredientes clave
             </p>
             <h2 className={styles.ingredientsTitle}>
               De la naturaleza a tu rutina
             </h2>
-          </SectionReveal>
-          <SectionReveal delay={150}>
-            <div className={styles.ingredientsList}>
-              {['Rosa Mosqueta', 'Ácido Hialurónico', 'Hamamelis', 'Aceite de Argán', 'Aloe Vera', 'Vitamina C'].map((ing) => (
-                <span key={ing} className={styles.ingredientChip}>{ing}</span>
-              ))}
-            </div>
           </SectionReveal>
         </div>
       </section>

@@ -38,7 +38,7 @@ export default function ProductosPage() {
             <p className="section-label" style={{ color: 'var(--color-ambar)' }}>Catálogo completo</p>
             <h1 className={styles.title}>Nuestros<br />Productos</h1>
             <p className={styles.subtitle}>
-              Seis fórmulas elaboradas con ingredientes botánicos
+              Fórmulas y kits elaborados con ingredientes botánicos
               de alta concentración. Sin rellenos, sin artificios.
             </p>
           </SectionReveal>
@@ -50,7 +50,7 @@ export default function ProductosPage() {
         <div className="container">
           <div className={styles.grid}>
             {products.map((product, i) => (
-              <SectionReveal key={product.id} delay={i * 80}>
+              <SectionReveal key={product.id} delay={i * 40}>
                 <ProductCard product={product} />
               </SectionReveal>
             ))}
